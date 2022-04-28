@@ -1,0 +1,23 @@
+//implement 
+int_get_key(char * c){
+
+}
+
+//implementar un buffer circular de teclas pulsadas
+//keyboard routine guarda las teclas que se van pulsando y la interupcion va consultando el buffer
+
+//memoria dinamica
+//crear frames de 80x25 de 2 Bytes por celda 4000B total.
+//Para guardar un frame reservando memoria dinamica con las llamadas al sistema
+char get_screen(); //alocata una pagina en el espacio de paginas fisicas del usuario
+//si hago un fork el hijo tinene que heredar el espacio de paginas tambien!
+
+Con la interrupcion de reloj el sistema avisa al usuario que puede pasarle un nuevo frame para dibujarlo.
+desde la clock routine llamamos a void user_callback(char * screen) (paso de modo a usuario a modo sistema) y después de la ejecución volvemos a la clock_routine (paso de modo usuario a modo sistema).
+
+
+
+Links útiles:
+-Circular buffer implementation: https://stackoverflow.com/questions/827691/how-do-you-implement-a-circular-buffer-in-c
+
+-
